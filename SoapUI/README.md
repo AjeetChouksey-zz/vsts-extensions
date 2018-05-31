@@ -44,4 +44,4 @@ You can use SOAPUI.xml
 Download from https://raw.githubusercontent.com/AjeetChouksey/vsts-extensions/master/SoapUI/SOAPUI.xml
 # License
 
-This extension is published under MIT license. See [license file](../blob/master/LICENSE).
+This extension is published under MIT license. See [license file](https://github.com/AjeetChouksey/vsts-extensions/blob/master/SoapUI/LICENSE).
