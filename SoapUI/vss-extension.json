@@ -1,0 +1,72 @@
+{
+    "manifestVersion": 1,
+    "id": "soapui",
+    "name": "SoapUI Test Task",
+    "version": "1.0.2",
+    "publisher": "AjeetChouksey",
+	"public": true,
+    "icons": {
+        "default": "extension-icon.png"
+    },
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "description": "Tasks for using SoapUI with additional jars to support generate consolidated report, fetch data at runtime from input xls, establish connection to Azure SQL DB for validations.",
+    "categories": [
+        "Build and release"
+    ],
+	"badges": [
+        {
+            "href": "",
+            "uri": "",
+            "description": "VSTS Build Status"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/AjeetChouksey/SoapUI"
+    },
+	"content": {
+        "details": {
+            "path": "readme.md"
+        },
+        "license": {
+            "path": "license"
+        }
+    },
+    "galleryFlags": [
+        "Public"
+    ],
+    "files": [
+        {
+          "path": "SoapUI"
+        },
+        {
+          "path": "SoapUI-Include"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "12f07873-6fb0-4b8f-bce7-1d085d8760e6",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "SoapUI"
+            }
+        },
+        {
+            "id": "1fd068ca-e2d7-45b8-a5a7-51b4e22665d6",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "SoapUI-Include"
+            }
+        }
+    ]
+}
