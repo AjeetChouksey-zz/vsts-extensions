@@ -11,7 +11,9 @@ This extension can be used to run SoapUI script or to make SoapUI available for 
 - Go to VSTS Marketplace and install the extension
 - In your build definition add the task "SoapUI"
   - Either select your project (and [arguments](https://www.soapui.org/test-automation/running-functional-tests.html))
-    - If you add the argument -j (default value), this task will produce junit reports, which you can then send to VSTS/TFS using task "[Publish Test Results](https://docs.microsoft.com/en-us/vsts/build-release/tasks/test/publish-test-results)"
+    - If you add the argument -j (default value), this task will produce junit reports, which you can then send to VSTS/TFS using task "[Publish Test Results]. use -f to mention where you report will be extracted.
+    
+    (https://docs.microsoft.com/en-us/vsts/build-release/tasks/test/publish-test-results)"
 - or "SoapUI-Include"
   - This will create an environment variable called SOAPUI_EXE that you can use in the following tasks.
 
@@ -39,7 +41,7 @@ The build number is automatically incremented on each commit by the VSTS Build t
 # Sample File:
 
 You can use SOAPUI.xml
-Download from https://github.com/AjeetChouksey/SoapUI/blob/master/SOAPUI.xml
+Download from https://raw.githubusercontent.com/AjeetChouksey/vsts-extensions/master/SoapUI/SOAPUI.xml
 # License
 
 This extension is published under MIT license. See [license file](../blob/master/LICENSE).
