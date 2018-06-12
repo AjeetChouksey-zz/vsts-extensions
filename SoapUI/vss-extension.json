@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "soapui",
     "name": "SoapUI Test Task",
-    "version": "2.0.4",
+    "version": "2.0.6",
     "publisher": "AjeetChouksey",
 	"public": true,
     "icons": {

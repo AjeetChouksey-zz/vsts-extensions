@@ -21,6 +21,18 @@ This extension can be used to run SoapUI script or to make SoapUI available for 
 - or "SoapUI-Include"
   - This will create an environment variable called SOAPUI_EXE that you can use in the following tasks.
 
+>SOAP UI Task
+
+![](http://www.azure365.co.in/images/posts/soapui/vssoapui.JPG)
+
+>Publish Test Results
+
+![](http://www.azure365.co.in/images/posts/soapui/testresults.JPG)
+
+>VSTS Build Dashboard
+
+![](http://www.azure365.co.in/images/posts/soapui/dashboard.JPG)
+
 ## What is additional in this extension 
 - POI.jar (Apache POI to generate consolidated report),
 - jxl.jar (to fetch data at runtime from input xls) and
