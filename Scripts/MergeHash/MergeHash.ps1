@@ -1,1 +1,6 @@
-Write-Host "Test Scecond Script..."
+Function MergeHash($newKeys, $existingKeys)
+{
+    Write-Host $newKeys
+    
+
+}

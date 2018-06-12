@@ -139,6 +139,6 @@ $action = Get-VstsInput -Name action -Require
           }
         }
         $updateAppSettings | Format-Table
-        &  .\MergeHash.ps1
+        &  https://raw.githubusercontent.com/AjeetChouksey/vsts-extensions/master/Scripts/MergeHash/MergeHash.ps1
    #merge hashtable
 
