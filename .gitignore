@@ -320,6 +320,9 @@ OpenCover/
 # Azure Stream Analytics local run output 
 ASALocalRun/
 
+#PS node_modules
+AzureAppSettings/ps_modules
+
 # MSBuild Binary and Structured Log
 *.binlog
 
