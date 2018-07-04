@@ -1,15 +1,15 @@
 {
     "id": "e340e148-3bf6-4ee5-93ef-ff93ffc16f67",
-    "name": "Get Azure App Keys",
-    "friendlyName": "Get Azure App Keys",
-    "description": "Get Azure App Keys",
-    "helpMarkDown": "",
+    "name": "Azure Function Keys",
+    "friendlyName": "Azure Function Keys",
+    "description": "Get and Update Azure Function Keys in App Settings",
+    "helpMarkDown": "https://github.com/AjeetChouksey/vsts-extensions/blob/master/AzureAppSettings/README.md",
     "category": "Build, Release",
     "author": "Ajeet Chouksey",
     "version": {
         "Major": 1,
         "Minor": 0,
-        "Patch": 1
+        "Patch":7
     },
     "minimumAgentVersion": "2.131.0",
     "instanceNameFormat": "AppSettings",
@@ -57,16 +57,42 @@
             "helpMarkDown": "Select the slot to configure, or leave empty to use the default, production slot."
         },
         {
-            "name": "action",
-            "type": "pickList",
-            "label": "Action",           
+            "name": "selectFunctionName",
+            "type":"pickList",
+            "label": "Function Name",
+            "defaultValue": "all",
+             "required": false,
+            "options":{
+                "all":"ALL"
+              } ,
+              "properties": {
+                "EditableOptions": "True"
+            }
+        },
+        {
+            "name": "selectFunctionKeyType",
+            "type":"pickList",
+            "label": "Function Key Type",
+            "defaultValue": "all",
+             "required": false,
+            "options":{
+                "all":"ALL"
+              } ,
+              "properties": {
+                "EditableOptions": "True"
+            }
+        },
+        {
+            "name": "hostKey",
+            "type":"radio",
+            "label": "Include Host Keys",
+            "defaultValue": "false",
             "required": true,
-            "defaultValue": "Update App Settings",
-            "options": {               
-                "Update App Settings": "appsetting",
-                "Create VSTS task": "vststask",
-                "Both": "both"
-              },
+            "options":{
+                "true":"Yes",
+                "false":"No"
+            },
+          
             "helpMarkDown": "Select the slot to configure, or leave empty to use the default, production slot."
         }
     ],
