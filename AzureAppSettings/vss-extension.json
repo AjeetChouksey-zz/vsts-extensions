@@ -1,8 +1,8 @@
 {
     "manifestVersion":1,
     "id": "appsettings",
-    "name": "Azure Web, Function, API App settings",
-    "version": "1.0.81",
+    "name": "Azure Function App settings",
+    "version": "1.1.41",
     "publisher": "AjeetChouksey",
 	"public": true,
     "icons": {
@@ -13,14 +13,14 @@
             "id": "Microsoft.VisualStudio.Services"
         }
     ],
-    "description": "Tasks to Work with Azure Web, Function, API App Settings",
+    "description": "Tasks to Work with FunctionApp Settings",
     "categories": [
         "Build and release"
     ],
 
     "repository": {
         "type": "git",
-        "uri": "https://github.com/AjeetChouksey/SoapUI"
+        "uri": "https://github.com/AjeetChouksey/vsts-extensions/tree/master/AzureAppSettings/AppKeys"
     },
 	"content": {
         "details": {
